@@ -25,15 +25,14 @@ Module.register("The-Hourly", {
         this.today = "";
         this.getHourly();		
         this.scheduleUpdate(); 
-        this.hourly = [];
+        this.hourly = null;
     }, 
 
     getDom: function() {  
 
-        var hours = this.hourly; 
-		
+        if(this,hourly){		
         var wrapper = document.createElement("div"); 
-	  
+	          var hours = this.hourly; 
         var midDiv = document.createElement("div"); 
 		
         var whours = hours.slice(0, 12);
@@ -53,7 +52,7 @@ Module.register("The-Hourly", {
 								}
          
 		wrapper.appendChild(midDiv);
-		
+		}
         return wrapper;
     }, 
      

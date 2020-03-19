@@ -19,7 +19,7 @@ module.exports = NodeHelper.create({
             url: "https://api.weather.gov/gridpoints/BGM/35,50/forecast/hourly",
             method: 'GET',
             headers: {
-                'token': 'SHIFYpUPJOYdfCbCOUHoueGNTdttXYGe',
+                'token': '',
                 'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.8; rv:24.0) Gecko/20100101 Firefox/24.0 Chrome/79.0.3945.130 Safari/537.36'
             },
         }, (error, response, body) => {
